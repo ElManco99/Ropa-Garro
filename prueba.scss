@@ -1,0 +1,366 @@
+@import "menu";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+    background-color: rgb(207, 210, 30);
+    text-align: center;
+    margin-top: 0;
+    top: 0;
+    border: 5px solid rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: opacar;
+    animation-iteration-count: infinite;
+}
+#div-uno{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to top, rgb(9, 255, 0), rgb(4, 0, 255)); 
+    background-image: linear-gradient(to left, rgb(255, 0, 221), rgb(0, 255, 221));
+}
+
+
+
+#div-dos{
+    background-color: blueviolet;
+       width: 50px;
+       height: 50px;
+       border: 2px solid black;
+       transform: translate(10px, 10px); 
+        transform: translateX(10px);
+       transform: translateY(10px); 
+   
+       transform: rotate(360deg);
+       transform: rotateX(50deg);
+       transform: rotateY(50deg); 
+   
+       transform: scale(2, 2);
+       transform: scaleX(2);
+       transform: scaleY(2);
+       transform: scaleZ(2);
+   
+        transform: skew(20deg, 20deg); 
+   
+        transform: skewX(20deg); 
+        transform: skewY(20deg); 
+   
+
+     background-color: crimson;
+     width: 100px;
+     height: 100px;
+    transition: height 3s; width: 3s;
+    transition: all 20s;
+} 
+
+
+#div:hover{
+    height: 200px; width: 200px;
+    background-color: aqua;
+} #div-uno{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to top, rgb(9, 255, 0), rgb(4, 0, 255)); 
+    background-image: linear-gradient(to left, rgb(255, 0, 221), rgb(0, 255, 221));
+}
+
+
+
+#div-dos{
+    background-color: blueviolet;
+       width: 50px;
+       height: 50px;
+       border: 2px solid black;
+       transform: translate(10px, 10px); 
+        transform: translateX(10px);
+       transform: translateY(10px); 
+   
+       transform: rotate(360deg);
+       transform: rotateX(50deg);
+       transform: rotateY(50deg); 
+   
+       transform: scale(2, 2);
+       transform: scaleX(2);
+       transform: scaleY(2);
+       transform: scaleZ(2);
+   
+        transform: skew(20deg, 20deg); 
+   
+        transform: skewX(20deg); 
+        transform: skewY(20deg); 
+   
+
+     background-color: crimson;
+     width: 100px;
+     height: 100px;
+    transition: height 3s; width: 3s;
+    transition: all 20s;
+} 
+
+
+#div:hover{
+    height: 200px; width: 200px;
+    background-color: aqua;
+} 
+eader{
+    background-color: rgb(185, 87, 30);
+    margin-top: 0;
+    top: 0;
+    border: 5px solid rgb(10, 0, 0);
+}
+header nav{
+    text-align: center;
+    margin: 15px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+header nav a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 23px;
+    border: 3px solid rgb(19, 167, 56);   text-decoration: none;  
+}
+.div-padre{
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(26, 13, 13);
+    border-color: brown;
+    color: rgb(51, 32, 218);
+    display: flex;
+         flex-direction: row;
+        justify-content: space-between;
+        gap: 15px; 
+        flex-direction: row;
+        flex-wrap: wrap; 
+        flex-direction: row;
+        align-content:flex-end;
+}
+.uno, .dos, .tres,.cuatro,.cinco,.seis{
+    border: 3px solid rgb(247, 0, 255);
+    width: 160px;
+    height:70px;
+    order: 2;
+}
+p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: auto;
+    background-color: darkorange;
+}
+.grid-container{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+     grid-template-rows: 50px 50px;
+    background-color: #2196f3;
+    padding: 10px;
+} 
+.grid-item{
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer";
+    grid-template-rows: 50px 27fr 1fr 75px;
+    grid-template-columns: 25% auto 25%;
+    grid-column-gap: 10px;
+    grid-row-gap: 1px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: nuestro_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+    animation-delay: 5s;
+} 
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#productos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+.logo{
+    background-color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.border{
+    border: 3px solid black;
+}
+.border{
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    justify-content: space-around;
+}
+.grid-hijo{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 15px;
+}
+.parrafo{
+    font-weight:bold;
+    background-color: rgb(180, 8, 8);
+    border: rgb(255, 255, 255);
+}
+
+#texto{
+    letter-spacing: 16px;
+    border: rgb(251, 255, 0);
+    background-color: rgb(43, 77, 43);
+}
+.parrafo-3{
+    font-family: 'Nunito', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    text-decoration: color orange, blue
+}
+.div-uno{
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    font-size: 150px;
+    overflow: scroll;
+    color:rgb(207, 210, 30)
+}
+.div-dos{
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid blueviolet;
+    width: 500px;
+    height: 150px;
+    border-style: ridge;
+    color:rgb(206, 130, 17)
+}
+
+a{
+ text-decoration: none;
+ color: blue;
+}
+input{
+width: 100px; height: 50px;
+transition: all 4s;
+}
+input:focus{
+width: 200px;
+font-size: 24px;
+border: 10px solid black;
+} 
+
+@keyframes nuestro_efecto {
+0%{
+    width: 100px;
+}
+10%{
+    background-color: brown;
+    width: 150px;
+    border: 5px solid black;
+}
+25%{
+    background-color: blue;
+    width: 300px;
+}
+50%{
+    background-color: coral;
+    height: 350px;
+    border-radius: 35px;
+}
+75%{
+    background-color: aqua;
+    height: 10px;
+}
+100%{
+    background-color: blueviolet;
+    border-radius: 300px;
+    height: 500px;
+    width: 500px;
+}
+}
+@keyframes opacar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+ 
+ 
+ @media screen and (max-width: 800px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+            background-color: #9ceeae;
+      }
+    .logo{
+        display: none;
+    }
+    .nav-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav a{
+        font-size: medium;
+    }
+    .contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    h1{
+        text-align: center;
+        margin: 20px;
+    }
+    p{
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "nav header header"
+        "nav productos publicidad"
+        "nav servicios publicidad"
+        "footer footer footer";
+        grid-template-rows: 100px 27fr 1fr 75px;
+        grid-template-columns: 25% auto 30%;
+        grid-column-gap: 10px;
+        grid-row-gap: 1px;
+    }
+}
